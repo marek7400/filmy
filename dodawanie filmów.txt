@@ -1,0 +1,22 @@
+Instrukcja obsługi skryptu add_new_movie.py
+1. Uruchamianie i dodawanie pojedyncze (tryb interaktywny)
+Uruchom skrypt w terminalu / wierszu poleceń:
+code
+Bash
+python add_new_movie.py
+Jeśli nie zdefiniowano wcześniej klucza API w pliku lub zmiennych środowiskowych, skrypt poprosi o jego wklejenie.
+Wybierz tryb 1 (Interaktywny).
+Podaj tytuł filmu (np. Gladiator lub z ukośnikiem w przypadku chęci zachowania polskiego i oryginalnego tytułu na karcie: Gladiator / Gladiator).
+Podaj rok produkcji (np. 2000).
+Skrypt wyszuka film, pobierze reżysera, czas trwania, gatunki, polski opis oraz plakat i wyświetli podsumowanie, pytając o zatwierdzenie.
+2. Dodawanie masowe (tryb automatyczny)
+Jeśli chcesz dodać wiele filmów jednocześnie bez ciągłego klikania i potwierdzania:
+Wybierz tryb 2 w konsoli (lub skrypt sam utworzy plik filmy.txt, jeśli go nie znajdzie).
+Otwórz wygenerowany plik filmy.txt i wpisz filmy (jeden pod drugim) w formacie Tytuł, Rok lub Tytuł (Rok) [1]:
+code
+Text
+Incepcja, 2010
+Gladiator, 2000
+Skazani na Shawshank, 1994
+Matrix, 1999
+Zapisz plik i uruchom skrypt ponownie, wybierając tryb 2. Program automatycznie pobierze dane wszystkich pozycji, pobierze plakaty, wygeneruje karty i dopisze je na koniec pliku index.html lub index_updated.html.
